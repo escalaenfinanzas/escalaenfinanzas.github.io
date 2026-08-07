@@ -26,3 +26,10 @@ Abre `index.html` en Chrome, Edge o Firefox.
 - Agregar aviso de privacidad.
 - Añadir fotografía profesional y biografía ampliada.
 - Revisar el contenido después de recibir la opinión registral del IMPI.
+
+
+## Cambios V1.1
+- Logo transparente en navegación y sección principal.
+- Eliminado el cuadro blanco alrededor del logo.
+- Fondo del dashboard simplificado para evitar repetir la marca detrás del contenido.
+- Ajustes menores de tamaño y sombra del isotipo.
