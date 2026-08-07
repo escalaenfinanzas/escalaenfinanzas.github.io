@@ -28,3 +28,24 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+
+// V1.2: copy public contact email to clipboard.
+document.querySelectorAll('.copy-email').forEach(button => {
+  button.addEventListener('click', async () => {
+    const email = button.dataset.email;
+    const originalText = button.textContent;
+
+    try {
+      await navigator.clipboard.writeText(email);
+      button.textContent = 'Correo copiado';
+      button.classList.add('copied');
+      setTimeout(() => {
+        button.textContent = originalText;
+        button.classList.remove('copied');
+      }, 1800);
+    } catch (error) {
+      window.location.href = `mailto:${email}`;
+    }
+  });
+});
