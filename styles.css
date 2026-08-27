@@ -273,3 +273,62 @@ button, input, textarea { font: inherit; }
     width: min(70%, 300px);
   }
 }
+
+/* =========================
+   V1.3 — Identidad visual final
+   ========================= */
+:root {
+  --navy-950: #00102e;
+  --navy-900: #011533;
+  --navy-800: #082a4d;
+  --gold: #e6bd66;
+  --gold-strong: #d9a845;
+  --teal: #36b8b5;
+  --teal-light: #69d7d3;
+}
+
+/* Avatar circular para espacios compactos */
+.brand img {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+}
+
+/* El logotipo mixto presentado al IMPI es horizontal; darle presencia real en el hero */
+.visual-card > img {
+  width: min(100%, 560px);
+  margin: 0 auto 1.65rem;
+  object-fit: contain;
+}
+
+/* En experiencia usamos el avatar para no competir con el wordmark del hero */
+.experience-logo img {
+  width: min(100%, 250px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.footer-brand img {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .visual-card > img {
+    width: min(100%, 520px);
+  }
+}
+
+@media (max-width: 480px) {
+  .brand img {
+    width: 56px;
+    height: 56px;
+  }
+
+  .visual-card > img {
+    width: 100%;
+  }
+}
