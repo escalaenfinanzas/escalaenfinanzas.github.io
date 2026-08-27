@@ -1,8 +1,8 @@
-# Escala En Finanzas — Sitio web V1.3
+# Escala En Finanzas — Sitio web V1.5
 
 Landing page estática y responsive de Escala En Finanzas.
 
-## V1.3
+## V1.5
 - Se incorpora el logotipo final presentado al IMPI.
 - Se incorpora el avatar circular como identidad secundaria.
 - Se actualizan favicon y banner de previsualización social.
@@ -16,3 +16,10 @@ Landing page estática y responsive de Escala En Finanzas.
 - `assets/avatar.png`: avatar circular.
 - `assets/favicon.png`: favicon derivado del avatar.
 - `assets/banner.png`: imagen Open Graph / previsualización social.
+
+
+## V1.5
+- Hero de marca: más presencia para el logotipo registrado.
+- Fondo del logo integrado con la tarjeta para eliminar el efecto de imagen incrustada.
+- Dashboard secundario más compacto.
+- Avatar del header ligeramente más grande.

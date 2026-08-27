@@ -423,3 +423,125 @@ button, input, textarea { font: inherit; }
     padding: 1rem;
   }
 }
+
+/* =========================
+   V1.5 — Hero de marca
+   ========================= */
+
+/* El hero reserva más ancho al logotipo registrado */
+.hero-grid {
+  grid-template-columns: .94fr 1.06fr;
+  gap: 2.7rem;
+}
+
+.hero-visual {
+  width: 100%;
+  max-width: 720px;
+  justify-self: end;
+}
+
+/* Un solo plano visual: el fondo de la tarjeta se aproxima al fondo del PNG
+   para que desaparezca la sensación de "imagen dentro de otra imagen". */
+.visual-card {
+  min-height: 0;
+  padding: .55rem 1rem 1rem;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background:
+    radial-gradient(circle at 88% 84%, rgba(54,184,181,.11), transparent 34%),
+    linear-gradient(96deg, #00102b 0%, #01132f 52%, #021734 100%);
+  border: 1px solid rgba(230,189,102,.20);
+  box-shadow: 0 26px 70px rgba(0,0,0,.30);
+}
+
+.visual-card::after {
+  opacity: .34;
+}
+
+/* El wordmark ocupa prácticamente todo el ancho disponible, sin marco visual extra. */
+.visual-card > img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: none;
+  margin: -.15rem auto .15rem;
+  border-radius: 0;
+  filter: drop-shadow(0 8px 18px rgba(0,0,0,.16));
+}
+
+/* Dashboard subordinado al logo: más compacto y ligeramente más estrecho. */
+.mini-dashboard {
+  width: 90%;
+  margin: .15rem auto 0;
+  padding: 1rem 1.15rem .95rem;
+  border-radius: 18px;
+  background: rgba(2,18,42,.78);
+  border: 1px solid rgba(255,255,255,.10);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.025);
+}
+
+.bars {
+  height: 108px;
+}
+
+/* Avatar un poco más visible, sin competir con el nombre. */
+.brand img {
+  width: 74px;
+  height: 74px;
+}
+
+@media (max-width: 1100px) {
+  .hero-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.25rem;
+  }
+
+  .hero-visual {
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .hero-visual {
+    max-width: 690px;
+    justify-self: center;
+    margin-inline: auto;
+  }
+
+  .visual-card {
+    padding: .55rem .85rem .9rem;
+  }
+
+  .brand img {
+    width: 66px;
+    height: 66px;
+  }
+}
+
+@media (max-width: 480px) {
+  .visual-card {
+    padding: .35rem .55rem .7rem;
+    border-radius: 22px;
+  }
+
+  .mini-dashboard {
+    width: 94%;
+    padding: .9rem;
+  }
+
+  .bars {
+    height: 94px;
+  }
+
+  .brand img {
+    width: 60px;
+    height: 60px;
+  }
+}
