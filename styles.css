@@ -545,3 +545,82 @@ button, input, textarea { font: inherit; }
     height: 60px;
   }
 }
+
+/* =========================
+   V1.6 — Compactar espaciado vertical
+   ========================= */
+
+/* Reduce el "aire" acumulado entre secciones sin cambiar la composición. */
+#servicios {
+  padding-top: 5.2rem;
+  padding-bottom: 4.15rem;
+}
+
+.process-section {
+  padding-top: 4.4rem;
+  padding-bottom: 3.65rem;
+}
+
+.experience-section {
+  padding-top: 1.25rem;
+  padding-bottom: 4.35rem;
+}
+
+.audience-section {
+  padding-top: 4.4rem;
+  padding-bottom: 3.45rem;
+}
+
+.cta-section {
+  padding-top: .75rem;
+  padding-bottom: 5.25rem;
+}
+
+/* Ligera compactación interna para que el recorrido se sienta más continuo. */
+.process-section .section-heading,
+.audience-section .section-heading {
+  margin-bottom: 2.2rem;
+}
+
+.steps li {
+  padding-top: 1.15rem;
+  padding-bottom: 1.15rem;
+}
+
+/* En tablet/móvil preservamos más respiración para lectura y tactilidad. */
+@media (max-width: 900px) {
+  #servicios,
+  .process-section,
+  .audience-section {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .experience-section {
+    padding-top: 1.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .cta-section {
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (max-width: 720px) {
+  #servicios,
+  .process-section,
+  .audience-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .experience-section {
+    padding-top: 1.25rem;
+    padding-bottom: 4rem;
+  }
+
+  .cta-section {
+    padding-bottom: 4.5rem;
+  }
+}
