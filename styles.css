@@ -332,3 +332,94 @@ button, input, textarea { font: inherit; }
     width: 100%;
   }
 }
+
+/* =========================
+   V1.4 — Hero + header refinement
+   ========================= */
+
+/* Un poco más de presencia para el avatar en navegación */
+.nav-wrap {
+  min-height: 94px;
+}
+
+.brand {
+  gap: .9rem;
+}
+
+.brand img {
+  width: 70px;
+  height: 70px;
+}
+
+/* Dar más espacio relativo al logo final en el hero */
+.hero-grid {
+  grid-template-columns: 1.05fr .95fr;
+  gap: 4rem;
+}
+
+.hero-visual {
+  width: 100%;
+}
+
+.visual-card {
+  padding: 1.15rem;
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at 82% 16%, rgba(54,184,181,.10), transparent 35%),
+    linear-gradient(145deg, rgba(7,32,59,.98), rgba(1,17,42,.99));
+  border: 1px solid rgba(230,189,102,.24);
+}
+
+/* Logo final recortado para web: mayor tamaño y sin efecto "imagen pegada" */
+.visual-card > img {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto 1.15rem;
+  border-radius: 18px;
+  filter: drop-shadow(0 10px 22px rgba(0,0,0,.22));
+}
+
+.mini-dashboard {
+  padding: 1.15rem 1.2rem;
+}
+
+@media (max-width: 900px) {
+  .nav-wrap {
+    min-height: 88px;
+  }
+
+  .brand img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .hero-visual {
+    max-width: 680px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand img {
+    width: 58px;
+    height: 58px;
+  }
+
+  .visual-card {
+    padding: .8rem;
+    border-radius: 24px;
+  }
+
+  .visual-card > img {
+    border-radius: 14px;
+    margin-bottom: .9rem;
+  }
+
+  .mini-dashboard {
+    padding: 1rem;
+  }
+}
