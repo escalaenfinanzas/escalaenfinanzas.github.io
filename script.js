@@ -49,3 +49,15 @@ document.querySelectorAll('.copy-email').forEach(button => {
     }
   });
 });
+
+// Volver completamente al inicio al pulsar enlaces #inicio
+document.querySelectorAll('a[href="#inicio"]').forEach(link => {
+  link.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+});
