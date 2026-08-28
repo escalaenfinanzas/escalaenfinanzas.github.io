@@ -768,3 +768,14 @@ button, input, textarea { font: inherit; }
     max-width: 1080px;
   }
 }
+
+/* Ajuste para navegación con header fijo */
+html {
+  scroll-padding-top: 115px;
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 125px;
+  }
+}
