@@ -23,3 +23,13 @@ Landing page estática y responsive de Escala En Finanzas.
 - Fondo del logo integrado con la tarjeta para eliminar el efecto de imagen incrustada.
 - Dashboard secundario más compacto.
 - Avatar del header ligeramente más grande.
+
+
+## V1.6
+- Compactación del espaciado vertical entre Servicios, Proceso, Experiencia, Para quién es y CTA.
+- Sin cambios de contenido, funcionalidad ni identidad visual.
+- Se conserva mayor respiración en tablet y móvil.
+
+
+## V1.7
+Refinamiento exclusivo de desktop: ancho de contenido, hero, tarjetas, proceso, experiencia, audiencia, CTA y footer más compactos. La versión móvil <=900px no se modifica.

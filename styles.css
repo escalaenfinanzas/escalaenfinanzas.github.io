@@ -624,3 +624,147 @@ button, input, textarea { font: inherit; }
     padding-bottom: 4.5rem;
   }
 }
+
+
+/* =========================
+   V1.7 — Desktop refinement
+   Inspirado en la composición compacta de móvil.
+   No modifica tablet/móvil (<= 900px).
+   ========================= */
+
+@media (min-width: 901px) {
+
+  /* Contenido más concentrado en monitores anchos */
+  .container {
+    width: min(calc(100% - 4rem), 1080px);
+  }
+
+  /* Header más contenido y alineado con el resto de la página */
+  .nav-wrap {
+    min-height: 90px;
+  }
+
+  .brand img {
+    width: 68px;
+    height: 68px;
+  }
+
+  /* Hero: conserva dos columnas, pero evita que los elementos se dispersen */
+  .hero {
+    padding-top: 5.8rem;
+    padding-bottom: 4.25rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: .92fr 1.08fr;
+    gap: 2.15rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.15rem, 4.8vw, 4.65rem);
+    max-width: 620px;
+  }
+
+  .hero-text {
+    max-width: 580px;
+    font-size: 1.06rem;
+  }
+
+  .hero-actions {
+    margin-top: 1.8rem;
+  }
+
+  .trust-row {
+    margin-top: 1.55rem;
+  }
+
+  .hero-visual {
+    max-width: 630px;
+  }
+
+  .visual-card {
+    border-radius: 28px;
+  }
+
+  .mini-dashboard {
+    width: 92%;
+  }
+
+  /* Titulares de secciones con una escala más controlada en desktop */
+  .section-heading {
+    max-width: 680px;
+  }
+
+  .section-heading h2,
+  .experience-card h2,
+  .cta-card h2 {
+    font-size: clamp(2.2rem, 3.5vw, 3.15rem);
+  }
+
+  /* Servicios: tarjetas menos extendidas y con una lectura más parecida a móvil */
+  #servicios .container {
+    max-width: 1060px;
+  }
+
+  .cards {
+    gap: 1.1rem;
+  }
+
+  .card {
+    padding: 1.8rem;
+  }
+
+  /* Proceso: reduce la distancia horizontal entre explicación y pasos */
+  .process-grid {
+    grid-template-columns: .88fr 1.12fr;
+    gap: 2.7rem;
+    max-width: 1040px;
+  }
+
+  .steps li {
+    grid-template-columns: 52px 1fr;
+    gap: 1rem;
+  }
+
+  /* Experiencia: bloque más compacto y centrado */
+  .experience-card {
+    max-width: 1040px;
+    grid-template-columns: 220px 1fr;
+    gap: 2.35rem;
+    padding: 2.55rem;
+  }
+
+  .experience-logo img {
+    max-width: 205px;
+  }
+
+  /* Público objetivo: grupo centrado y menos estirado */
+  .audience-section .container {
+    max-width: 1040px;
+  }
+
+  .audience-grid {
+    gap: .85rem;
+  }
+
+  .audience-item {
+    min-height: 118px;
+    padding: 1rem;
+  }
+
+  /* CTA: mismo lenguaje compacto que funciona bien en móvil */
+  .cta-card {
+    max-width: 1040px;
+    padding: 2.55rem;
+    gap: 1.65rem;
+  }
+
+  .cta-actions {
+    min-width: 300px;
+  }
+
+  /* Footer más concentrado */
+  .site-footer .container {
+    max-width: 1080px;
+  }
+}
